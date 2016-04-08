@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.harris.challenge.secret_agent_tools.Dock_01">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_marginBottom="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/editText4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_marginBottom="69dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignLeft="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_marginBottom="33dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editText"
+        android:editable="false"
+        android:text="Fuel Given"
+        android:clickable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:editable="false"
+        android:text="Thruster Accel Rate"
+        android:clickable="false"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:editable="false"
+        android:text="Thruster Decel Rate"
+        android:clickable="false"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:editable="false"
+        android:text="Fuel Rate"
+        android:clickable="false"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/editText3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText10"
+        android:editable="false"
+        android:text="Dock Distance"
+        android:clickable="false"
+        android:layout_above="@+id/editText5"
+        android:layout_alignLeft="@+id/editText4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editText5" />
+</RelativeLayout>
+<!-- From: file:/J:/brata-hsdc2016/BRATA/app/src/main/res/layout/activity_dock_01.xml -->

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harris.challenge.brata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name=".MainLauncher"
+            android:label="@string/title_activity_brata_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BrataLauncherActivity" >
+        </activity>
+        <activity android:name=".tools.RequestAssignmentActivity" >
+        </activity>
+        <activity android:name=".tools.NavigationActivity" >
+        </activity>
+        <activity android:name=".tools.RangingActivity" >
+        </activity>
+        <activity android:name=".tools.BearingActivity" >
+        </activity>
+        <activity android:name=".tools.QRCodeReaderActivity" >
+        </activity>
+        <activity android:name=".tools.TimerActivity" >
+        </activity>
+        <activity android:name=".tools.LightSensorActivity" >
+        </activity>
+        <activity android:name=".tools.SubmitResponseActivity" >
+        </activity>
+        <activity android:name=".tools.InclinationActivity" >
+        </activity>
+        <activity
+            android:name=".tools.CountdownActivity"
+            android:theme="@style/InclinationTheme" >
+        </activity>
+        <activity
+            android:name=".tools.DistanceFinderActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".IncidentLauncherActivity" >
+        </activity>
+        <activity android:name="com.harris.challenge.incidents.StraightAsAnArrow" >
+        </activity>
+        <activity android:name="com.harris.challenge.incidents.SkidMarks" >
+        </activity>
+        <activity android:name="com.harris.challenge.incidents.TwoPlacesAtOnce" >
+        </activity>
+        <activity android:name="com.harris.challenge.incidents.DudeMyCar" >
+        </activity>
+        <activity
+            android:name=".SATChallengeLauncherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.MasterServerCommunicator"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.RegistrationTool"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.Return"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.Dock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.Launch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.Secure"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".framework.GPSService" />
+
+        <receiver
+            android:name=".framework.SMSReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".tools.SoundRecordingActivity" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity android:name=".framework.UriEntryActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.harris.challenge.secret_agent_tools.Dock_01"
+            android:label="@string/title_activity_dock_01"
+            android:parentActivityName="com.harris.challenge.secret_agent_tools.Dock" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harris.challenge.secret_agent_tools.Dock" />
+        </activity>
+    </application>
+
+</manifest>

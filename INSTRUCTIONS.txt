@@ -1,0 +1,19 @@
+Instructions
+
+TODO should provide directions for them to clone to their own private shared repository.
+
+ - Clone the Brata project folder to a workspace location on your computer.
+ 
+ - Start Android Studo
+ 
+ - Select in Android Studio to Open an Existing project
+
+ - Navigate to where the project was downloaded and navigate into the top folder to select brata.  Do not open from the top brata folder you need to go down one further that will have a different icon than a folder and select that one.
+ 
+ - The Brata project should automatically build.
+
+ - Click on the Project menu on the left to start navigating the files to add in your sections of this year's challenge.
+
+Possible issues:
+
+No known Brata issues at this time.
